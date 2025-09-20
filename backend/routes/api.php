@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\HistoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/history', [HistoryController::class, 'index']);
+Route::post('/history', [HistoryController::class, 'store']);
+Route::get('/weather', [App\Http\Controllers\Api\WeatherController::class, 'getWeather']);
