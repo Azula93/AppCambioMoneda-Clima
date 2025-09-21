@@ -62,13 +62,20 @@ La comunicación entre frontend y backend se realiza vía **HTTP REST** usando J
    ```bash
    git clone https://github.com/tuusuario/travelapp.git
    cd travelapp/backend
-Instala dependencias:
+````markdown
+# 📝 Guía de Instalación y Uso
 
+## ⚙️ Backend (Laravel)
+
+### Instala dependencias
+
+```bash
 composer install
+````
 
+### Crea y configura el archivo `.env`
 
-Crea y configura el archivo .env:
-
+```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -78,92 +85,110 @@ DB_PASSWORD=
 
 EXCHANGE_API_KEY=tu_clave_exchangerate
 WEATHER_API_KEY=tu_clave_openweather
+```
 
+### Ejecuta migraciones y seeders
 
-Ejecuta migraciones y seeders:
-
+```bash
 php artisan migrate --seed
+```
 
+### Inicia el servidor
 
-Inicia el servidor:
-
+```bash
 php artisan serve
+```
 
-Frontend (Angular)
+## ⚙️ Frontend (Angular)
 
-Ve a la carpeta frontend:
+### Ve a la carpeta frontend
 
+```bash
 cd ../frontend
+```
 
+### Instala dependencias
 
-Instala dependencias:
-
+```bash
 npm install
+```
 
+### Inicia la app
 
-Inicia la app:
-
+```bash
 ng serve
+```
 
+Abre [http://localhost:4200](http://localhost:4200) en tu navegador.
 
-Abre http://localhost:4200
- en tu navegador.
+---
 
-🚀 Uso
+## 🚀 Uso
 
-Paso 1: Selecciona país y ciudad destino.
+1. **Paso 1:** Selecciona país y ciudad destino.
+2. **Paso 2:** Ingresa presupuesto en COP y selecciona la moneda.
+3. **Paso 3:** Visualiza:
 
-Paso 2: Ingresa presupuesto en COP y selecciona la moneda.
+   * País y ciudad seleccionados.
+   * Presupuesto original en COP.
+   * Presupuesto convertido a la moneda local con símbolo.
+   * Tasa de cambio aplicada.
+   * Clima actual en la ciudad destino.
 
-Paso 3: Visualiza:
+---
 
-País y ciudad seleccionados.
+## 🔑 Configuración de API Keys
 
-Presupuesto original en COP.
+En el archivo `.env` del backend:
 
-Presupuesto convertido a la moneda local con símbolo.
-
-Tasa de cambio aplicada.
-
-Clima actual en la ciudad destino.
-
-🔑 Configuración de API Keys
-
-En el archivo .env del backend:
-
+```env
 EXCHANGE_API_KEY=tu_clave_exchangerate
 WEATHER_API_KEY=tu_clave_openweather
-
+```
 
 El backend usará estas claves para hacer las llamadas a las APIs externas y devolver los datos al frontend.
 
-🤝 Contribuir
+---
+
+## 🤝 Contribuir
 
 Haz un fork del proyecto.
 
 Crea una rama para tu feature:
 
+```bash
 git checkout -b mi-feature
-
+```
 
 Haz commit de tus cambios:
 
+```bash
 git commit -m 'Agrego mi feature'
-
+```
 
 Haz push a la rama:
 
+```bash
 git push origin mi-feature
-
+```
 
 Abre un Pull Request en GitHub.
 
-📄 Licencia
+---
 
-Este proyecto está bajo la licencia MIT.
-Puedes usarlo, modificarlo y distribuirlo libremente mencionando al autor original.
+## 📄 Licencia
 
-Capturas
+Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente mencionando al autor original.
+
+---
+
+## 📸 Capturas
+
+*Agrega aquí capturas de pantalla de la aplicación en funcionamiento.*
+
+```
+```
+
 <img width="1904" height="536" alt="Captura de pantalla 2025-09-21 130518" src="https://github.com/user-attachments/assets/00ac5f89-2fb5-4461-a3cf-8ccf84e55e6d" />
 <img width="1912" height="620" alt="Captura de pantalla 2025-09-21 130531" src="https://github.com/user-attachments/assets/2a449217-f4a7-46bf-bf83-ee68e1c3f9d2" />
 <img width="1911" height="867" alt="Captura de pantalla 2025-09-21 130553" src="https://github.com/user-attachments/assets/ae416bc7-3885-4548-bc3a-9bab4c981cbc" />
