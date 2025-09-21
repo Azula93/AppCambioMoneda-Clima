@@ -26,7 +26,8 @@ class HistoryController extends Controller
             'originalAmount' => 'required|numeric',
             'convertedAmount' => 'required|numeric',
             'currencySymbol' => 'required|string',
-            'date' => 'required|date',
+
+
         ]);
 
 
@@ -36,8 +37,10 @@ class HistoryController extends Controller
             'originalAmount' => $request->originalAmount,
             'convertedAmount' => $request->convertedAmount,
             'currencySymbol' => $request->currencySymbol,
-            'date' => now(),
+            'date' => now('America/Bogota'),
         ];
+
+
 
         $history = History::create($data);
         return response()->json($history, 201);
