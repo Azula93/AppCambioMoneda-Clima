@@ -184,11 +184,6 @@ Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribui
 
 ## 📸 Capturas
 
-*Agrega aquí capturas de pantalla de la aplicación en funcionamiento.*
-
-```
-```
-
 <img width="1904" height="536" alt="Captura de pantalla 2025-09-21 130518" src="https://github.com/user-attachments/assets/00ac5f89-2fb5-4461-a3cf-8ccf84e55e6d" />
 <img width="1912" height="620" alt="Captura de pantalla 2025-09-21 130531" src="https://github.com/user-attachments/assets/2a449217-f4a7-46bf-bf83-ee68e1c3f9d2" />
 <img width="1911" height="867" alt="Captura de pantalla 2025-09-21 130553" src="https://github.com/user-attachments/assets/ae416bc7-3885-4548-bc3a-9bab4c981cbc" />
